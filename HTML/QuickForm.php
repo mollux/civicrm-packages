@@ -2093,7 +2093,7 @@ class HTML_QuickForm_Error extends PEAR_Error {
         if (is_int($code)) {
             parent::__construct(HTML_QuickForm::errorMessage($code), $code, $mode, $level, $debuginfo);
         } else {
-            parent::__construct(("Invalid error code: $code", QUICKFORM_ERROR, $mode, $level, $debuginfo);
+            parent::__construct("Invalid error code: $code", QUICKFORM_ERROR, $mode, $level, $debuginfo);
         }
     }
 
